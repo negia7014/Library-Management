@@ -1,0 +1,146 @@
+/* Register.css */
+
+/* Global styles for the page */
+.register-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f2f5; /* Light grey background */
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Style for the main registration box */
+.register-box {
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+/* Heading style */
+.register-box h2 {
+    margin-bottom: 30px;
+    color: #333;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+/* Input and form styling */
+.register-box form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.register-box input[type="text"],
+.register-box input[type="email"],
+.register-box input[type="password"] {
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box; /* Include padding/border in the element's total width/height */
+}
+
+.register-box input:focus {
+    border-color: #007bff; /* Highlight focus with a primary color */
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.2);
+}
+
+/* Membership Label */
+.membership-label {
+    align-self: flex-start;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+    font-size: 14px;
+}
+
+/* Radio Button Group */
+.radio-group {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    border: 1px solid #eee;
+}
+
+.radio-label {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    color: #333;
+}
+
+/* Submit Button */
+.register-button {
+    padding: 12px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+    margin-top: 20px;
+}
+
+.register-button:hover {
+    background-color: #0056b3;
+}
+
+.register-button:active {
+    transform: translateY(1px);
+}
+
+/* Error message styling */
+.error {
+    color: #dc3545; /* Red color for errors */
+    background-color: #f8d7da;
+    border: 1px solid #f5c6cb;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    font-size: 14px;
+    text-align: left;
+}
+
+/* Login Prompt */
+.login-prompt {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #777;
+}
+
+.login-link {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.login-link:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 500px) {
+    .register-box {
+        margin: 20px;
+        padding: 30px 20px;
+    }
+}
